@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "sources": [
+    "C:\\Users\\peter\\Documents\\GitHub\\vstudio\\VistaQx\\JsQx\\source\\class\\qxlib\\theme\\Decoration.js"
+  ],
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Theme",
+    "define",
+    "extend",
+    "theme",
+    "indigo",
+    "Decoration",
+    "decorations",
+    "style",
+    "radius",
+    "width",
+    "colorTop",
+    "colorLeft",
+    "colorRight",
+    "colorBottom",
+    "widthTop",
+    "color",
+    "innerWidth",
+    "innerColor",
+    "shadowLength",
+    "shadowBlurRadius",
+    "shadowColor",
+    "backgroundColor",
+    "include",
+    "qxlib"
+  ],
+  "mappings": ";;;;;;;;;;;;AAAAA,EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;AAAAH,EAAAA,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,wBAAhB,EACI;AACIC,IAAAA,MAAM,EAAEN,EAAE,CAACO,KAAH,CAASC,MAAT,CAAgBC,UAD5B;AAGIC,IAAAA,WAAW,EACX;AAEI,oBACA;AACIC,QAAAA,KAAK,EACL;AACIC,UAAAA,MAAM,EAAE;AADZ;AAFJ,OAHJ;AAUI,iCACA;AACID,QAAAA,KAAK,EACL;AACIE,UAAAA,KAAK,EAAE,CAAC,CAAD,EAAI,CAAJ,EAAO,CAAP,EAAU,CAAV,CADX;AAEIC,UAAAA,QAAQ,EAAE,aAFd;AAGIC,UAAAA,SAAS,EAAE,aAHf;AAIIC,UAAAA,UAAU,EAAE,aAJhB;AAKIC,UAAAA,WAAW,EAAE,aALjB;AAMIL,UAAAA,MAAM,EAAE,CAAC,CAAD,EAAI,CAAJ,EAAO,CAAP,EAAU,CAAV;AANZ;AAFJ,OAXJ;AAuBI,kCACA;AACID,QAAAA,KAAK,EACL;AACIO,UAAAA,QAAQ,EAAE,CADd;AAEIJ,UAAAA,QAAQ,EAAE,aAFd;AAGIH,UAAAA,KAAK,EAAE;AAHX;AAFJ,OAxBJ;AAiCI,gBACA;AACIA,QAAAA,KAAK,EACL;AACIE,UAAAA,KAAK,EAAE,CADX;AAEIM,UAAAA,KAAK,EAAE,gBAFX;AAGIC,UAAAA,UAAU,EAAE,CAHhB;AAIIC,UAAAA,UAAU,EAAE,gBAJhB;AAKIC,UAAAA,YAAY,EAAE,CALlB;AAMIC,UAAAA,gBAAgB,EAAE,CANtB;AAOIC,UAAAA,WAAW,EAAE,QAPjB;AAQIC,UAAAA,eAAe,EAAE;AARrB;AAFJ,OAlCJ;AAgDI,uBACA;AACIC,QAAAA,OAAO,EAAE,QADb;AAGIf,QAAAA,KAAK,EACL;AACIQ,UAAAA,KAAK,EAAE,cADX;AAEIE,UAAAA,UAAU,EAAE,cAFhB;AAGIC,UAAAA,YAAY,EAAE,CAHlB;AAIIC,UAAAA,gBAAgB,EAAE;AAJtB;AAJJ,OAjDJ;AA6DI,wBAAkB;AACdZ,QAAAA,KAAK,EACL;AACIQ,UAAAA,KAAK,EAAE;AADX;AAFc,OA7DtB;AAmEI,+BAAyB;AACrBR,QAAAA,KAAK,EACL;AACIQ,UAAAA,KAAK,EAAE;AADX;AAFqB;AAnE7B;AAJJ,GADJ;AAAAQ,EAAAA,KAAK,CAACpB,KAAN,CAAYE,UAAZ,CAAuBN,aAAvB,GAAuCA,aAAvC",
+  "sourcesContent": [
+    "qx.Theme.define(\"qxlib.theme.Decoration\",\r\n    {\r\n        extend: qx.theme.indigo.Decoration,\r\n\r\n        decorations:\r\n        {\r\n\r\n            \"button-box\":\r\n            {\r\n                style:\r\n                {\r\n                    radius: 3\r\n                }\r\n            },\r\n\r\n            \"tabview-page-button-top\":\r\n            {\r\n                style:\r\n                {\r\n                    width: [1, 1, 2, 1],\r\n                    colorTop: \"windowFrame\",\r\n                    colorLeft: \"windowFrame\",\r\n                    colorRight: \"windowFrame\",\r\n                    colorBottom: \"tabSelected\",\r\n                    radius: [3, 3, 0, 0]\r\n                }\r\n            },\r\n\r\n            \"tabview-pane-top-checked\":\r\n            {\r\n                style:\r\n                {\r\n                    widthTop: 5,\r\n                    colorTop: \"tabSelected\",\r\n                    style: \"solid\"\r\n                }\r\n            },\r\n\r\n            \"window\":\r\n            {\r\n                style:\r\n                {\r\n                    width: 1,\r\n                    color: \"inactiveBorder\",\r\n                    innerWidth: 4,\r\n                    innerColor: \"inactiveBorder\",\r\n                    shadowLength: 1,\r\n                    shadowBlurRadius: 3,\r\n                    shadowColor: \"shadow\",\r\n                    backgroundColor: \"background\"\r\n                }\r\n            },\r\n\r\n            \"window-active\":\r\n            {\r\n                include: \"window\",\r\n\r\n                style:\r\n                {\r\n                    color: \"activeBorder\",\r\n                    innerColor: \"activeBorder\",\r\n                    shadowLength: 2,\r\n                    shadowBlurRadius: 5\r\n                }\r\n            },\r\n\r\n            \"window-caption\": {\r\n                style:\r\n                {\r\n                    color: \"inactiveCaptionText\"\r\n                }\r\n            },\r\n            \"window-caption-active\": {\r\n                style:\r\n                {\r\n                    color: \"activeCaptionText\"\r\n                }\r\n            }\r\n        }\r\n    });"
+  ]
+}

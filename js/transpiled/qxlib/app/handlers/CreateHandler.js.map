@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "sources": [
+    "C:\\Users\\peter\\Documents\\GitHub\\vstudio\\VistaQx\\JsQx\\source\\class\\qxlib\\app\\handlers\\CreateHandler.js"
+  ],
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "type",
+    "extend",
+    "core",
+    "Object",
+    "statics",
+    "createWidget",
+    "message",
+    "args",
+    "getInstance",
+    "properties",
+    "members",
+    "proxyClass",
+    "ctor",
+    "resolveFromName",
+    "obj",
+    "create",
+    "prototype",
+    "constructor",
+    "newobj",
+    "apply",
+    "name",
+    "ns",
+    "window",
+    "split",
+    "forEach",
+    "x",
+    "qxlib",
+    "app",
+    "handlers",
+    "CreateHandler"
+  ],
+  "mappings": ";;;;;;;;;;;;;;AAAAA,EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;AAAAH,EAAAA,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,kCAAhB,EAAoD;AAChDC,IAAAA,IAAI,EAAE,WAD0C;AAEhDC,IAAAA,MAAM,EAAEP,EAAE,CAACQ,IAAH,CAAQC,MAFgC;AAIhDC,IAAAA,OAAO,EAAE;AACLC,MAAAA,YAAY,EAAE,sBAAUC,OAAV,EAAmBC,IAAnB,EAAyB;AACnC,eAAO,KAAKC,WAAL,GAAmBH,YAAnB,CAAgCC,OAAhC,EAAyCC,IAAzC,CAAP;AACH;AAHI,KAJuC;AAUhDE,IAAAA,UAAU,EAAE,EAVoC;AAYhDC,IAAAA,OAAO,EAAE;AACLL,MAAAA,YAAY,EAAE,sBAAUM,UAAV,EAAsBJ,IAAtB,EAA4B;AACvC,YAAI,CAACA,IAAL,EACKA,IAAI,GAAG,EAAP;AACJ,YAAIK,IAAI,GAAG,KAAKC,eAAL,CAAqBF,UAArB,CAAX;AACA,YAAI,CAACC,IAAL,EAAW,OAAO,IAAP;AACX,YAAIE,GAAG,GAAGX,MAAM,CAACY,MAAP,CAAcH,IAAI,CAACI,SAAnB,CAAV;AACAF,QAAAA,GAAG,CAACG,WAAJ,GAAkBL,IAAlB;AACA,YAAIM,MAAM,GAAGN,IAAI,CAACO,KAAL,CAAWL,GAAX,EAAgBP,IAAhB,CAAb;AACA,YAAI,QAAOW,MAAP,MAAkB,QAAtB,EAAgCJ,GAAG,GAAGI,MAAN;AACjC,eAAOJ,GAAP;AACF,OAXI;AAaLD,MAAAA,eAAe,EAAE,yBAAUO,IAAV,EAAgB;AAC7B,YAAIC,EAAE,GAAGC,MAAT;AACAF,QAAAA,IAAI,CAACG,KAAL,CAAW,GAAX,EAAgBC,OAAhB,CAAwB,UAAUC,CAAV,EAAa;AACjCJ,UAAAA,EAAE,GAAGA,EAAE,KAAK,IAAP,GAAc,IAAd,GAAqBA,EAAE,CAACI,CAAD,CAA5B;AACH,SAFD;AAGA,eAAOJ,EAAP;AACH;AAnBI;AAZuC,GAApD;AAAAK,EAAAA,KAAK,CAACC,GAAN,CAAUC,QAAV,CAAmBC,aAAnB,CAAiChC,aAAjC,GAAiDA,aAAjD",
+  "sourcesContent": [
+    "qx.Class.define(\"qxlib.app.handlers.CreateHandler\", {\r\n    type: \"singleton\",\r\n    extend: qx.core.Object,\r\n\r\n    statics: {\r\n        createWidget: function (message, args) {\r\n            return this.getInstance().createWidget(message, args);\r\n        }\r\n    },\r\n\r\n    properties: {},\r\n\r\n    members: {\r\n        createWidget: function (proxyClass, args) {\r\n           if (!args)\r\n                args = [];\r\n            var ctor = this.resolveFromName(proxyClass);\r\n            if (!ctor) return null;\r\n            var obj = Object.create(ctor.prototype);\r\n            obj.constructor = ctor;\r\n            var newobj = ctor.apply(obj, args);\r\n            if (typeof newobj === \"object\") obj = newobj;\r\n           return obj;\r\n        },\r\n\r\n        resolveFromName: function (name) {\r\n            var ns = window;\r\n            name.split(\".\").forEach(function (x) {\r\n                ns = ns === null ? null : ns[x];\r\n            });\r\n            return ns;\r\n        }\r\n    }\r\n});\r\n"
+  ]
+}

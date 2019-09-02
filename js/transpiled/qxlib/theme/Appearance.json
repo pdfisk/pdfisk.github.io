@@ -1,0 +1,23 @@
+{
+  "className": "qxlib.theme.Appearance",
+  "packageName": "qxlib.theme",
+  "name": "Appearance",
+  "superClass": "qx.theme.indigo.Appearance",
+  "interfaces": [],
+  "mixins": [],
+  "functionName": null,
+  "clazz": {
+    "location": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 197,
+        "column": 7
+      }
+    }
+  },
+  "type": "theme",
+  "descendants": []
+}

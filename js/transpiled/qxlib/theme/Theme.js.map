@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "sources": [
+    "C:\\Users\\peter\\Documents\\GitHub\\vstudio\\VistaQx\\JsQx\\source\\class\\qxlib\\theme\\Theme.js"
+  ],
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Theme",
+    "define",
+    "meta",
+    "color",
+    "qxlib",
+    "theme",
+    "Color",
+    "decoration",
+    "Decoration",
+    "font",
+    "Font",
+    "icon",
+    "Tango",
+    "appearance",
+    "Appearance"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAAAA,EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;;AAAA;;;;;;;;;AAUAH,EAAAA,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,mBAAhB,EACA;AACEC,IAAAA,IAAI,EACJ;AACEC,MAAAA,KAAK,EAAGC,KAAK,CAACC,KAAN,CAAYC,KADtB;AAEEC,MAAAA,UAAU,EAAGH,KAAK,CAACC,KAAN,CAAYG,UAF3B;AAGEC,MAAAA,IAAI,EAAGL,KAAK,CAACC,KAAN,CAAYK,IAHrB;AAIEC,MAAAA,IAAI,EAAGf,EAAE,CAACS,KAAH,CAASM,IAAT,CAAcC,KAJvB;AAKEC,MAAAA,UAAU,EAAGT,KAAK,CAACC,KAAN,CAAYS;AAL3B;AAFF,GADA;AAVAV,EAAAA,KAAK,CAACC,KAAN,CAAYL,KAAZ,CAAkBD,aAAlB,GAAkCA,aAAlC",
+  "sourcesContent": [
+    "/* ************************************************************************\r\n\r\n   Copyright:\r\n\r\n   License:\r\n\r\n   Authors:\r\n\r\n************************************************************************ */\r\n\r\nqx.Theme.define(\"qxlib.theme.Theme\",\r\n{\r\n  meta :\r\n  {\r\n    color : qxlib.theme.Color,\r\n    decoration : qxlib.theme.Decoration,\r\n    font : qxlib.theme.Font,\r\n    icon : qx.theme.icon.Tango,\r\n    appearance : qxlib.theme.Appearance\r\n  }\r\n});"
+  ]
+}

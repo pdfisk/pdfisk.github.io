@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "sources": [
+    "C:\\Users\\peter\\Documents\\GitHub\\vstudio\\VistaQx\\JsQx\\source\\class\\qxlib\\app\\App.js"
+  ],
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "type",
+    "extend",
+    "core",
+    "Object",
+    "statics",
+    "createWidget",
+    "proxyClass",
+    "args",
+    "qxlib",
+    "app",
+    "handlers",
+    "CreateHandler",
+    "properties",
+    "root",
+    "members",
+    "start",
+    "setRoot",
+    "window",
+    "VistaQx",
+    "App",
+    "Start",
+    "console",
+    "log"
+  ],
+  "mappings": ";;;;;;;;;;;;;AAAAA,EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;AAAAH,EAAAA,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,eAAhB,EAAiC;AAC7BC,IAAAA,IAAI,EAAE,WADuB;AAE7BC,IAAAA,MAAM,EAAEP,EAAE,CAACQ,IAAH,CAAQC,MAFa;AAI7BC,IAAAA,OAAO,EAAE;AACLC,MAAAA,YAAY,EAAE,sBAAUC,UAAV,EAAsBC,IAAtB,EAA4B;AACtC,eAAOC,KAAK,CAACC,GAAN,CAAUC,QAAV,CAAmBC,aAAnB,CAAiCN,YAAjC,CAA8CC,UAA9C,EAA0DC,IAA1D,CAAP;AACH;AAHI,KAJoB;AAU7BK,IAAAA,UAAU,EAAE;AACRC,MAAAA,IAAI,EAAE;AADE,KAViB;AAc7BC,IAAAA,OAAO,EAAE;AACLC,MAAAA,KAAK,EAAE,eAAUF,IAAV,EAAgB;AACnB,aAAKG,OAAL,CAAaH,IAAb;;AACA,YAAII,MAAM,CAACC,OAAX,EAAoB;AAChB,cAAID,MAAM,CAACC,OAAP,CAAeC,GAAnB,EAAwB;AACpBF,YAAAA,MAAM,CAACC,OAAP,CAAeC,GAAf,CAAmBC,KAAnB,CAAyBP,IAAzB;AACH;AACJ,SAJD,MAKK;AACDQ,UAAAA,OAAO,CAACC,GAAR,CAAY,uBAAZ;AACF;AACL;AAXI;AAdoB,GAAjC;AAAAd,EAAAA,KAAK,CAACC,GAAN,CAAUU,GAAV,CAActB,aAAd,GAA8BA,aAA9B",
+  "sourcesContent": [
+    "qx.Class.define(\"qxlib.app.App\", {\r\n    type: \"singleton\",\r\n    extend: qx.core.Object,\r\n\r\n    statics: {\r\n        createWidget: function (proxyClass, args) {\r\n            return qxlib.app.handlers.CreateHandler.createWidget(proxyClass, args);\r\n        }\r\n    },\r\n\r\n    properties: {\r\n        root: {}\r\n    },\r\n\r\n    members: {\r\n        start: function (root) {\r\n            this.setRoot(root);\r\n            if (window.VistaQx) {\r\n                if (window.VistaQx.App) {\r\n                    window.VistaQx.App.Start(root);\r\n                }\r\n            }\r\n            else {\r\n                console.log('VistaQx.App not found');\r\n             }\r\n        }\r\n    }\r\n});\r\n"
+  ]
+}

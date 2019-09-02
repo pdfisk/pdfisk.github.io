@@ -1,0 +1,23 @@
+{
+  "className": "qxlib.theme.Color",
+  "packageName": "qxlib.theme",
+  "name": "Color",
+  "superClass": "qx.theme.indigo.Color",
+  "interfaces": [],
+  "mixins": [],
+  "functionName": null,
+  "clazz": {
+    "location": {
+      "start": {
+        "line": 48,
+        "column": 0
+      },
+      "end": {
+        "line": 118,
+        "column": 7
+      }
+    }
+  },
+  "type": "theme",
+  "descendants": []
+}

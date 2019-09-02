@@ -1,39 +1,49 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;overflow:hidden;">
+﻿<!doctype html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link href="js/vs/editor/editor.main.css" rel="stylesheet" />
-</head>
-<body style="width:100%;height:100%;">
-    <div id="container" style="width:100%;height:100%;">
-    </div>
-     <script>var require = { paths: { 'vs': 'js/vs' } };</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+
+    <title>Vista Python</title>
+
+    <!-- Bootstrap's CSS -->
+    <link rel="shortcut icon" href="icons/st-balloon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            -webkit-touch-callout: none !important;
+            overflow: hidden;
+        }
+    </style>
+
+    <script type="text/javascript" src="js/bridge/bridge.js"></script>
+    <script type="text/javascript" src="js/bridge/bridge.console.js"></script>
+    <script type="text/javascript" src="js/bridge/PythonVm.js"></script>
+    <script type="text/javascript" src="js/bridge/VistaLibQx.js"></script>
+    <script type="text/javascript" src="js/bridge/PythonLibQx.js"></script>
+    <script type="text/javascript" src="js/bridge/PythonDesktopQx.js"></script>
+    <script type="text/javascript" src="js/qxlib/boot.js"></script>
     <script type="text/javascript" src="js/vs/loader.js"></script>
-    <script type="text/javascript" src="js/vs/editor/editor.main.js"></script>
     <script>
-        "use strict";
-        var el = document.getElementById('container');
-        el.style.height = '100%';
-        el.style.width = '100%';
-
-        var editor = null;
-        var init = function () {
-
-            require(['vs/editor/editor.main'], function () {
-                editor = monaco.editor.create(document.getElementById("container"), {
-                    value: "\n\n\n",
-                    language: "python",
-                    automaticLayout: true,
-                    minimap: {
-                        enabled: false
-                    }
-                });
-            });
-            window.removeEventListener("load", init);
-        };
-        window.addEventListener("load", init);
+        require.config({ paths: { 'vs': 'js/vs' } });
+        require(['vs/editor/editor.main'], function () {
+        });
     </script>
+
+</head>
+<body>
 </body>
 </html>

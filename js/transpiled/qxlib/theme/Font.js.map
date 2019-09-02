@@ -1,0 +1,24 @@
+{
+  "version": 3,
+  "sources": [
+    "C:\\Users\\peter\\Documents\\GitHub\\vstudio\\VistaQx\\JsQx\\source\\class\\qxlib\\theme\\Font.js"
+  ],
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Theme",
+    "define",
+    "extend",
+    "theme",
+    "indigo",
+    "Font",
+    "fonts",
+    "qxlib"
+  ],
+  "mappings": ";;;;;;;;;;;;AAAAA,EAAAA,EAAE,CAACC,SAAH,CAAaC,oBAAb,CAAkCC,aAAlC;AAAAH,EAAAA,EAAE,CAACI,KAAH,CAASC,MAAT,CAAgB,kBAAhB,EACI;AACIC,IAAAA,MAAM,EAAEN,EAAE,CAACO,KAAH,CAASC,MAAT,CAAgBC,IAD5B;AAGIC,IAAAA,KAAK,EACL;AACI,iBAAW;AACP,gBAAQ,EADD;AAEP,kBAAU,CAAC,WAAD,EAAc,OAAd,EAAuB,SAAvB,EAAkC,YAAlC;AAFH,OADf;AAKI,sBAAgB;AACZ,gBAAQ,EADI;AAEZ,kBAAU,CAAC,WAAD,EAAc,OAAd,EAAuB,WAAvB,EAAoC,YAApC,CAFE;AAGZ,gBAAQ;AAHI,OALpB;AAUI,qBAAe;AACX,gBAAQ,EADG;AAEX,kBAAU,CAAC,WAAD,EAAc,OAAd,EAAuB,UAAvB,EAAmC,YAAnC,CAFC;AAGX,gBAAQ;AAHG,OAVnB;AAeI,cAAQ;AACJ,gBAAQ,EADJ;AAEJ,kBAAU,CAAC,OAAD,EAAU,SAAV,EAAqB,YAArB;AAFN;AAfZ;AAJJ,GADJ;AAAAC,EAAAA,KAAK,CAACJ,KAAN,CAAYE,IAAZ,CAAiBN,aAAjB,GAAiCA,aAAjC",
+  "sourcesContent": [
+    "qx.Theme.define(\"qxlib.theme.Font\",\r\n    {\r\n        extend: qx.theme.indigo.Font,\r\n\r\n        fonts:\r\n        {\r\n            \"default\": {\r\n                \"size\": 13,\r\n                \"family\": [\"helvetica\", \"arial\", \"verdana\", \"sans-serif\"]\r\n            },\r\n            \"window-title\": {\r\n                \"size\": 16,\r\n                \"family\": [\"helvetica\", \"arial\", \"  verdana\", \"sans-serif\"],\r\n                \"bold\": false\r\n            },\r\n            \"defaultBold\": {\r\n                \"size\": 13,\r\n                \"family\": [\"helvetica\", \"arial\", \" verdana\", \"sans-serif\"],\r\n                \"bold\": true\r\n            },\r\n            \"menu\": {\r\n                \"size\": 13,\r\n                \"family\": [\"arial\", \"verdana\", \"sans-serif\"]\r\n            }\r\n        }\r\n    });"
+  ]
+}
