@@ -1,23 +1,25 @@
 <!DOCTYPE HTML>
 <html manifest="cache.appcache">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
-	<title>VistaClient</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+    <title>PySharedCode</title>
 
-  <script type="text/javascript">
-    var Ext = Ext || {};
-    Ext.beforeLoad = function (tags) {
-      //var s = location.search;
-      var profile;
-      profile = 'desktop';
-      Ext.manifest ='generatedFiles/' + profile;
-    };
-  </script>
+    <script type="text/javascript">
+        var Ext = Ext || {};
+        Ext.beforeLoad = function (tags) {
+            //var s = location.search;
+            var profile;
+            profile = 'desktop';
+            Ext.manifest = 'generatedFiles/' + profile;
+        };
+    </script>
+    <script type="text/javascript" src="resources/js/ace.js" defer></script>
+    <script type="text/javascript" src="resources/js/mode-python.js" defer></script>
 
-  <!-- The line below must be kept intact for Sencha Cmd to build your application -->
-  <script id="microloader" data-app="79acfbf8-4793-4602-bea7-c6d02ec7b2a3" type="text/javascript">var Ext=Ext||{};Ext.manifest=Ext.manifest||'generatedFiles/desktop.json';Ext=Ext||{};
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="79acfbf8-4793-4602-bea7-c6d02ec7b2a3" type="text/javascript">var Ext=Ext||{};Ext.manifest=Ext.manifest||'generatedFiles/desktop.json';Ext=Ext||{};
 Ext.Boot=Ext.Boot||function(emptyFn){function Request(cfg){if(cfg.$isRequest)return cfg;cfg=cfg.url?cfg:{url:cfg};var url=cfg.url;url=url.charAt?[url]:url;var charset=cfg.charset||Boot.config.charset;_apply(this,cfg);delete this.url;this.urls=url;this.charset=charset}function Entry(cfg){if(cfg.$isEntry)return cfg;var charset=cfg.charset||Boot.config.charset,manifest=Ext.manifest;manifest=manifest&&manifest.loader;var cache=void 0!==cfg.cache?cfg.cache:manifest&&manifest.cache,buster;Boot.config.disableCaching&&
 (void 0===cache&&(cache=!Boot.config.disableCaching),!1===cache?buster=+new Date:!0!==cache&&(buster=cache),buster&&(manifest=manifest&&manifest.cacheParam||Boot.config.disableCachingParam,buster=manifest+'\x3d'+buster));_apply(this,cfg);this.charset=charset;this.buster=buster;this.requests=[]}var doc=document,_emptyArray=[],_config={disableCaching:/[?&](?:cache|disableCacheBuster)\b/i.test(location.search)||!/http[s]?:/i.test(location.href)||/(^|[ ;])ext-cache=1/.test(doc.cookie)?!1:!0,disableCachingParam:'_dc',
 loadDelay:!1,preserveScripts:!0,charset:'UTF-8'},cssRe=/\.css(?:\?|$)/i,resolverEl=doc.createElement('a'),isBrowser='undefined'!==typeof window,_environment={browser:isBrowser,node:!isBrowser&&'function'===typeof require,phantom:window&&(window._phantom||window.callPhantom)||/PhantomJS/.test(window.navigator.userAgent)},_tags=Ext.platformTags={},_apply=function(object,config,defaults){defaults&&_apply(object,defaults);if(object&&config&&'object'===typeof config)for(var i in config)object[i]=config[i];
@@ -93,10 +95,10 @@ Microloader.appCacheState||Microloader.updatedManifest?(Microloader.appUpdate={u
 content.substring(0,1);'/'==checksumType?content.substring(2,hashLn+2)!==hash&&(passed=!1):'f'==checksumType?content.substring(10,hashLn+10)!==hash&&(passed=!1):'.'==checksumType&&content.substring(1,hashLn+1)!==hash&&(passed=!1);return passed},parseResult:function(result){var rst={};!result.exception&&0!==result.status||Boot.env.phantom?200<=result.status&&300>result.status||304===result.status||Boot.env.phantom||0===result.status&&0<result.content.length?rst.content=result.content:rst.error=!0:
 rst.error=!0;return rst}};return Microloader}();Ext.manifest=Ext.manifest||'bootstrap';Ext.Microloader.run();</script>
 </head>
-  <body class="launching">
+<body class="launching">
     <div id="splash" style="margin-top:20%;font-family:Arial;font-size:64px;text-align:center;color:#404040;">
-      <div id="theLoadingText">LOADING...</div>
-      <i style="margin:20px;" class="fa fa-spinner fa-spin"></i>
+        <div id="theLoadingText">LOADING...</div>
+        <i style="margin:20px;" class="fa fa-spinner fa-spin"></i>
     </div>
-  </body>
+</body>
 </html>
