@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "names": [
+    "qx",
+    "Bootstrap",
+    "executePendingDefers",
+    "$$dbClassInfo",
+    "Class",
+    "define",
+    "extend",
+    "application",
+    "Mobile",
+    "members",
+    "main",
+    "pyquest",
+    "Application",
+    "superclass",
+    "prototype",
+    "call",
+    "log",
+    "appender",
+    "Native",
+    "Console",
+    "login",
+    "page",
+    "Login",
+    "overview",
+    "Overview",
+    "manager",
+    "ui",
+    "mobile",
+    "Manager",
+    "addDetail",
+    "getRouting",
+    "onGet",
+    "_show",
+    "init",
+    "data",
+    "show",
+    "customData"
+  ],
+  "sources": [
+    "/home/peter/Projects/qx/test/app/source/class/pyquest/Application.js"
+  ],
+  "sourcesContent": [
+    "/* ************************************************************************\n\n   Copyright: 2025 \n\n   License: MIT license\n\n   Authors: \n\n************************************************************************ */\n\n/**\n * This is the main application class of your custom application \"${Name}\"\n *\n * @asset(pyquest/*)\n */\nqx.Class.define(\"pyquest.Application\",\n{\n  extend : qx.application.Mobile,\n\n\n  members :\n  {\n\n    /**\n     * This method contains the initial application code and gets called\n     * during startup of the application\n     */\n    main()\n    {\n      // Call super class\n      super.main();\n\n      // Enable logging in debug variant\n      if (qx.core.Environment.get(\"qx.debug\"))\n      {\n        // support native logging capabilities, e.g. Firebug for Firefox\n        qx.log.appender.Native;\n        // support additional cross-browser console.\n        // Trigger a \"longtap\" event on the navigation bar for opening it.\n        qx.log.appender.Console;\n      }\n\n      /*\n      -------------------------------------------------------------------------\n        Below is your actual application code...\n        Remove or edit the following code to create your application.\n      -------------------------------------------------------------------------\n      */\n\n      const login = new pyquest.page.Login();\n      const overview = new pyquest.page.Overview();\n\n      // Add the pages to the page manager.\n      const manager = new qx.ui.mobile.page.Manager(false);\n      manager.addDetail([\n        login,\n        overview\n      ]);\n\n      // Initialize the application routing\n      this.getRouting().onGet(\"/\", this._show, login);\n      this.getRouting().onGet(\"/overview\", this._show, overview);\n\n      this.getRouting().init();\n    },\n\n\n    /**\n     * Default behaviour when a route matches. Displays the corresponding page on screen.\n     * @param data {Map} the animation properties\n     */\n    _show(data) {\n      this.show(data.customData);\n    }\n  }\n});\n"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;EAAAA,EAAE,CAACC,SAAS,CAACC,oBAAoB,CAACC,aAAa,CAAC;EAAhD;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;EAEA;AACA;AACA;AACA;AACA;EACAH,EAAE,CAACI,KAAK,CAACC,MAAM,CAAC,qBAAqB,EACrC;IACEC,MAAM,EAAGN,EAAE,CAACO,WAAW,CAACC,MAAM;IAG9BC,OAAO,EACP;MAEE;AACJ;AACA;AACA;MACIC,IAAI,WAAJA,IAAIA,CAAA,EACJ;QACE;QACAC,OAAA,CAAAC,WAAA,CAAAC,UAAA,CAAAC,SAAA,CAAAJ,IAAA,CAAAK,IAAA;;QAEA;;QAEA;UACE;UACAf,EAAE,CAACgB,GAAG,CAACC,QAAQ,CAACC,MAAM;UACtB;UACA;UACAlB,EAAE,CAACgB,GAAG,CAACC,QAAQ,CAACE,OAAO;QACzB;;QAEA;AACN;AACA;AACA;AACA;AACA;;QAEM,IAAMC,KAAK,GAAG,IAAIT,OAAO,CAACU,IAAI,CAACC,KAAK,CAAC,CAAC;QACtC,IAAMC,QAAQ,GAAG,IAAIZ,OAAO,CAACU,IAAI,CAACG,QAAQ,CAAC,CAAC;;QAE5C;QACA,IAAMC,OAAO,GAAG,IAAIzB,EAAE,CAAC0B,EAAE,CAACC,MAAM,CAACN,IAAI,CAACO,OAAO,CAAC,KAAK,CAAC;QACpDH,OAAO,CAACI,SAAS,CAAC,CAChBT,KAAK,EACLG,QAAQ,CACT,CAAC;;QAEF;QACA,IAAI,CAACO,UAAU,CAAC,CAAC,CAACC,KAAK,CAAC,GAAG,EAAE,IAAI,CAACC,KAAK,EAAEZ,KAAK,CAAC;QAC/C,IAAI,CAACU,UAAU,CAAC,CAAC,CAACC,KAAK,CAAC,WAAW,EAAE,IAAI,CAACC,KAAK,EAAET,QAAQ,CAAC;QAE1D,IAAI,CAACO,UAAU,CAAC,CAAC,CAACG,IAAI,CAAC,CAAC;MAC1B,CAAC;MAGD;AACJ;AACA;AACA;MACID,KAAK,WAALA,KAAKA,CAACE,IAAI,EAAE;QACV,IAAI,CAACC,IAAI,CAACD,IAAI,CAACE,UAAU,CAAC;MAC5B;IACF;EACF,CAAC,CAAC;EA3EFzB,OAAO,CAACC,WAAW,CAACT,aAAa,GAAGA,aAAa;AAAC",
+  "ignoreList": []
+}
