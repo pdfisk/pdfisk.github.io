@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Page Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="projects">Projects</a></li>
+                <li><a href="#" data-page="editor">Editor</a></li>
+                <li><a href="#" data-page="transcript">Transcript</a></li>
+                <li><a href="#" data-page="board">Board</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <h1>Welcome to Home</h1>
+            <p>This is the home page.</p>
+        </section>
+
+        <section id="projects" class="page">
+            <h1>Projects</h1>
+            <p>Here are some projects.</p>
+        </section>
+
+        <section id="editor" class="page">
+            <h1>Editor</h1>
+            <p>Edit your content here.</p>
+        </section>
+
+        <section id="transcript" class="page">
+            <h1>Transcript</h1>
+            <p>View your transcripts here.</p>
+        </section>
+
+        <section id="board" class="page">
+            <h1>Board</h1>
+            <p>This is the board page.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
