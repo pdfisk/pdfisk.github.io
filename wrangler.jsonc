@@ -1,8 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "cobol-ai-studio",
-  "main": "./index.html",
   "compatibility_date": "2026-02-04",
-  "workers_dev": false,
   "pages_build_output_dir": "./"
   }
