@@ -3,6 +3,5 @@
   // wrangler.jsonc
   "name": "cobol-ai-studio-site",
   "compatibility_date": "2026-02-04",
-  "pages_build_output_dir": "./",
-  "account_id": "2fa96c1aa157bea74eacfb91eb218595"
+  "pages_build_output_dir": "./"
 }
