@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   // wrangler.jsonc
-  "name": "cobol-ai-studio-site",
+  // "name": "cobol-ai-studio-site",
   "compatibility_date": "2026-02-04",
   "pages_build_output_dir": "./"
 }
