@@ -2,12 +2,21 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+h1 {
+    font-size: 2.0em;
+}
+
 h1:focus {
     outline: none;
 }
 
 a, .btn-link {
     color: #0071c1;
+}
+
+input {
+    margin-bottom: 5px;
+    width: 90%
 }
 
 .btn-primary {
@@ -68,12 +77,11 @@ a, .btn-link {
     }
 
 .loading-progress {
-    position: absolute;
+    position: relative;
     display: block;
     width: 8rem;
     height: 8rem;
-    inset: 20vh 0 auto 0;
-    margin: 0 auto 0 auto;
+    margin: 20vh auto 1rem auto;
 }
 
     .loading-progress circle {
@@ -103,6 +111,10 @@ a, .btn-link {
 
 code {
     color: #c02d76;
+}
+
+.red { 
+    color: red;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
